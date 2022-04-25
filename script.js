@@ -1,4 +1,4 @@
-const numColors = 25
+const numColors = 100
 const colorContainer = document.getElementById("colorsContainer")
 const colors = []
 
