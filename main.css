@@ -1,0 +1,27 @@
+/* takes content size, padding, and border into account when determing size of content */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* remove margins on typography to keep margins consistent */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+}
+
+.color-square {
+  width: 60px;
+  height: 60px;
+}
