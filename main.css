@@ -8,6 +8,19 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* remove margins on typography to keep margins consistent */
 h1,
 h2,
@@ -17,11 +30,32 @@ p {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .color-square {
   width: 60px;
   height: 60px;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.colorhex {
+  color: #ffffff;
+  opacity: 0.6;
+  font-weight: 700;
+  text-shadow: 0px 0px 20px #aaaaaa;
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 40%;
+  }
+
+  .color-square {
+    width: 120px;
+    height: 120px;
+  }
 }
